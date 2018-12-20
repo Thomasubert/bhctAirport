@@ -11,7 +11,7 @@ export class FlightsServices {
             "type": "departure",
             "status": "landed",
             "departure": {
-                "iataCode": "LYS",
+                "iataCode": "Budawesh",
                 "icaoCode": "LFLL",
                 "terminal": "T2",
                 "scheduledTime": "2018-12-20T06:00:00.000",
@@ -21,7 +21,7 @@ export class FlightsServices {
                 "actualRunway": "2018-12-20T06:11:00.000"
             },
             "arrival": {
-                "iataCode": "CDG",
+                "iataCode": "NTE",
                 "icaoCode": "LFPG",
                 "terminal": "2F",
                 "baggage": "23",
@@ -58,7 +58,7 @@ export class FlightsServices {
             "type": "departure",
             "status": "landed",
             "departure": {
-                "iataCode": "LYS",
+                "iataCode": "Roma",
                 "icaoCode": "LFLL",
                 "terminal": "T2",
                 "scheduledTime": "2018-12-20T06:00:00.000",
@@ -105,7 +105,7 @@ export class FlightsServices {
             "type": "departure",
             "status": "landed",
             "departure": {
-                "iataCode": "LYS",
+                "iataCode": "Sherwood",
                 "icaoCode": "LFLL",
                 "terminal": "T2",
                 "scheduledTime": "2018-12-20T06:00:00.000",

@@ -13,7 +13,7 @@
       <ion-row no-padding>
         <ion-col text-left>
           <p>
-            <ion-icon name='plane'></ion-icon> LYS - NTE
+            <ion-icon name='plane'></ion-icon> {{ f.departure.iataCode }} - NTE
           </p>
         </ion-col>
         <ion-col text-right>
@@ -26,10 +26,11 @@
 
     <ion-card-content>
       <p>
-        <ion-icon name='arrow-forward'></ion-icon> Heure de départ : 12h00 | Lyon
+        <ion-icon name='arrow-forward'></ion-icon> Heure de départ : {{ f.departure.scheduledTime | date: 'HH:mm d MMMM y' }} | Lyon
       </p>
+      <br>
       <p>
-        <ion-icon name='arrow-back'></ion-icon> Heure d'arrivée : 15h00 | Paris
+        <ion-icon name='arrow-back'></ion-icon> Heure d'arrivée : {{ f.arrival.scheduledTime | date: 'HH:mm d MMMM y' }} | Paris
       </p>
     </ion-card-content>
 
