@@ -1,14 +1,58 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Welcome to BHCT Airport</ion-title>
   </ion-navbar>
+
 </ion-header>
 
+
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card *ngFor = "let f of flightList">
+    <ion-card-header>
+      <ion-row no-padding>
+        <ion-col text-left>
+          <p>
+            <ion-icon name='plane'></ion-icon> LYS - NTE
+          </p>
+        </ion-col>
+        <ion-col text-right>
+          <p>
+            <ion-icon name='ios-log-in'></ion-icon> T1
+          </p>
+        </ion-col>
+      </ion-row>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>
+        <ion-icon name='arrow-forward'></ion-icon> Heure de départ : 12h00 | Lyon
+      </p>
+      <p>
+        <ion-icon name='arrow-back'></ion-icon> Heure d'arrivée : 15h00 | Paris
+      </p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='star'></ion-icon>
+          Favorite
+        </button>
+      </ion-col>
+      <ion-col text-right>
+        <button ion-button clear small color="danger" icon-start>
+          <ion-icon name='share-alt'></ion-icon>
+          Voir plus
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>
+
+
+
+
+<ion-footer>
+
+</ion-footer>

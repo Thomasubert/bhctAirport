@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SingleFlightPage } from '../pages/single-flight/single-flight';
+import { FlightsServices } from '../services/flights-services';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SingleFlightPage } from '../pages/single-flight/single-flight';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FlightsServices
   ]
 })
 export class AppModule {}
